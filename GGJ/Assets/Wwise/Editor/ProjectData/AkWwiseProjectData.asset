@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e21dfe77758c3d3499b573e83af682f1, type: 3}
+  m_Name: AkWwiseProjectData
+  m_EditorClassIdentifier: 
+  AcousticTextureWwu:
+  - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 4d88c95fc38c9042b04bc6c10627f088
+    GuidInternal: 
+    m_lastTime: -8586210708278236412
+    List: []
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: fb572f0433b3ac4898caa26b1d569ef8
+    GuidInternal: 
+    m_lastTime: -8586210708279532698
+    List: []
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 94e91b35bed8664497b99622ac5d2c8d
+    GuidInternal: 
+    m_lastTime: -8586210708278655265
+    List: []
+  EventWwu:
+  - PhysicalPath: Events\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 5153763ffd5be947b2c2f60772f2d783
+    GuidInternal: 
+    m_lastTime: -8586210708279403289
+    List: []
+  RtpcWwu:
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: aa8ce31ec7a19a4b89246af6d0e53626
+    GuidInternal: 
+    m_lastTime: -8586210708278904609
+    List: []
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 555414de827f7743a1011add74a92b93
+    GuidInternal: 
+    m_lastTime: -8586210708279283585
+    List: []
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 21e6092d064944449cdbcbe08fa443e7
+    GuidInternal: 
+    m_lastTime: -8586210708279343448
+    List: []
+  TriggerWwu:
+  - PhysicalPath: Triggers\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: fbaab78305c29842a2ab8ad52ab11c43
+    GuidInternal: 
+    m_lastTime: -8586210708278964434
+    List: []
+  ExpandedItems: []
+  autoPopulateEnabled: 1
+  CurrentPluginConfig: 
