@@ -536,8 +536,8 @@ Camera:
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
   m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
+  m_HDR: 0
+  m_AllowMSAA: 0
   m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
@@ -569,7 +569,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f614948c6730f6f459ae3e06e3c0f8b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1882878381}
+  player: {fileID: 1882878382}
 --- !u!114 &1542231546
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -592,12 +592,18 @@ MonoBehaviour:
     positionOffset: {x: 0, y: 0, z: 0}
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
---- !u!1 &1882878381 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 356464342908722091, guid: 98f4ac0bfd5d49b4983f4a8f6c326db2,
+--- !u!114 &1882878382 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2776119067293229910, guid: 98f4ac0bfd5d49b4983f4a8f6c326db2,
     type: 3}
   m_PrefabInstance: {fileID: 399442265}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28aed72f4264f5e4f86c8fc1adfb49e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1257446554851519013 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2762851892245805357, guid: cd165a59a39448b44a020233c750f1c4,
