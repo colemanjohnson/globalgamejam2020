@@ -1,10 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
 public class PlayerControls : MonoBehaviour
 {
+	public enum CauseOfDeath
+	{
+		Falling,
+		Melting
+	};
+
+	public UnityEvent PlayerDeath;
+
 	public float moveGroundForce = 1.0f;
 	public float moveAirForce = 0.5f;
 
@@ -23,13 +32,19 @@ public class PlayerControls : MonoBehaviour
 		SetVolume( snowVolume + change );
 	}
 
+	public void Kill( CauseOfDeath causeOfDeath )
+	{
+		// Do something I guess
+		PlayerDeath.Invoke();
+	}
+
 	void SetVolume( float volume )
 	{
 		snowVolume = Mathf.Min( volume, maxSnowVolume );
 
 		if ( snowVolume < minSnowVolume )
 		{
-			OnDeath();
+			Kill( CauseOfDeath.Melting );
 			return;
 		}
 
@@ -84,9 +99,5 @@ public class PlayerControls : MonoBehaviour
 	    	if ( horSpeed < maxAirSpeed )
 	    		body.AddForce( new Vector2( horInput * moveAirForce, 0 ) );
 	    }
-    }
-
-    void OnDeath()
-    {
     }
 }
