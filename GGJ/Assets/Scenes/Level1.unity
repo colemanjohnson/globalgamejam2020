@@ -303,7 +303,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 329f5b402bdc3f542ba2d669aef7cf2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitTime: 1
+  waitTime: 0
   travelTime: 2
 --- !u!4 &623320513
 Transform:
@@ -348,7 +348,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 329f5b402bdc3f542ba2d669aef7cf2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitTime: 1
+  waitTime: 0
   travelTime: 2
 --- !u!4 &1025643177
 Transform:

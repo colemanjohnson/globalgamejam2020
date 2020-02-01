@@ -42,6 +42,9 @@ public class WaypointMovementController : MonoBehaviour
 		}
 		else
 		{
+			var dir = next.transform.position - cur.transform.position;
+			var angle = 90 + Mathf.Atan2( dir.y, dir.x ) * Mathf.Rad2Deg;
+			transform.rotation = Quaternion.AngleAxis( angle, Vector3.forward );
 			transform.position = Vector3.Lerp( cur.transform.position, next.transform.position, currentWaypointTime / next.travelTime );
 		}
 	}
