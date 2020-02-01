@@ -165,6 +165,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Snowman
       objectReference: {fileID: 0}
+    - target: {fileID: 2776119067293229910, guid: 98f4ac0bfd5d49b4983f4a8f6c326db2,
+        type: 3}
+      propertyPath: maxSpeed
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 3332576404995123211, guid: 98f4ac0bfd5d49b4983f4a8f6c326db2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -220,6 +225,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3469420784400398746, guid: 98f4ac0bfd5d49b4983f4a8f6c326db2,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 5d332810b56e62141899599d6a206f39, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98f4ac0bfd5d49b4983f4a8f6c326db2, type: 3}
 --- !u!1 &622618529
@@ -252,7 +262,7 @@ Transform:
   - {fileID: 1257446554851519013}
   - {fileID: 344330840}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &623320511
 GameObject:
@@ -400,7 +410,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1413079825 stripped
 GameObject:
@@ -426,9 +436,9 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
+    newSize: {x: 0.16, y: 0.16}
     adaptiveTilingThreshold: 0.5
-    drawMode: 1
+    drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
@@ -649,6 +659,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6432042519355177493, guid: cd165a59a39448b44a020233c750f1c4,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b14f34bc0fc16c5498b784b7a6f4cef5,
+        type: 3}
+    - target: {fileID: 6432042519355177493, guid: cd165a59a39448b44a020233c750f1c4,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd165a59a39448b44a020233c750f1c4, type: 3}
 --- !u!1001 &4890603545850990796
@@ -662,17 +683,17 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 4dddb64efc80282408125f99c909f278,
+      objectReference: {fileID: 21300000, guid: bf91e60326ed3c74481128790eadf5ea,
         type: 3}
     - target: {fileID: 1947502340430323238, guid: bcee562b1601875419ca15bc2503acb1,
         type: 3}
       propertyPath: m_Size.x
-      value: 1
+      value: 0.16
       objectReference: {fileID: 0}
     - target: {fileID: 1947502340430323238, guid: bcee562b1601875419ca15bc2503acb1,
         type: 3}
       propertyPath: m_Size.y
-      value: 1
+      value: 0.16
       objectReference: {fileID: 0}
     - target: {fileID: 1947502340430323238, guid: bcee562b1601875419ca15bc2503acb1,
         type: 3}
@@ -682,7 +703,7 @@ PrefabInstance:
     - target: {fileID: 1947502340430323238, guid: bcee562b1601875419ca15bc2503acb1,
         type: 3}
       propertyPath: m_DrawMode
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1947502340430323238, guid: bcee562b1601875419ca15bc2503acb1,
         type: 3}
@@ -1021,6 +1042,11 @@ PrefabInstance:
       propertyPath: m_Size.x
       value: 50
       objectReference: {fileID: 0}
+    - target: {fileID: 8663141272454567533, guid: de686be0ea57b064f9fc30faccc7db36,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 5d332810b56e62141899599d6a206f39, type: 2}
     - target: {fileID: 8663141272454567535, guid: de686be0ea57b064f9fc30faccc7db36,
         type: 3}
       propertyPath: m_LocalPosition.x
