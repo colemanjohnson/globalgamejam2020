@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerControls : MonoBehaviour
 {
@@ -18,7 +19,14 @@ public class PlayerControls : MonoBehaviour
 
 	void SetVolume( float volume )
 	{
-		snowVolume = Mathf.Clamp( volume, minSnowVolume, maxSnowVolume );
+		snowVolume = Mathf.Min( volume, maxSnowVolume );
+
+		if ( snowVolume < minSnowVolume )
+		{
+			OnDeath();
+			return;
+		}
+
     	var transform = GetComponent<Transform>();
 
     	float scale = Mathf.Sqrt( snowVolume );
@@ -57,5 +65,10 @@ public class PlayerControls : MonoBehaviour
 
 	    	ChangeVolume( Mathf.Abs( body.velocity.x ) * snowAccumulationFactor );
 	    }
+    }
+
+    void OnDeath()
+    {
+    	SceneManager.LoadScene( "Level1" );
     }
 }
