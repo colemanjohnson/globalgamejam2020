@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerControls : MonoBehaviour
 {
-	public float moveGroundTorque = 1.0f;
+	public float moveGroundForce = 1.0f;
 	public float moveAirForce = 0.5f;
 
 	public float maxGroundSpeed = 10.0f;
@@ -60,7 +60,7 @@ public class PlayerControls : MonoBehaviour
     	var transform = GetComponent<Transform>();
     	float radius = collider.radius * transform.localScale.x;
 
-    	var other = Physics2D.OverlapCircle( new Vector2( transform.position.x, transform.position.y - 0.1f ), radius, LayerMask.GetMask( "Terrain" ) );
+    	var other = Physics2D.OverlapCircle( new Vector2( transform.position.x, transform.position.y - 0.15f ), radius - 0.1f, LayerMask.GetMask( "Terrain" ) );
     	bool onGround = other != null;
 
 	    var body = GetComponent<Rigidbody2D>();
@@ -68,7 +68,7 @@ public class PlayerControls : MonoBehaviour
     	if ( onGround )
     	{
 	    	if ( body.velocity.magnitude < maxGroundSpeed )
-	    		body.AddTorque( -horInput * moveGroundTorque );
+	    		body.AddForce( new Vector2( horInput * moveGroundForce, 0 ) );
 
 	    	ChangeVolume( horSpeed * snowAccumulationFactor );
 

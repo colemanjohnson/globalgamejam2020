@@ -133,7 +133,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28aed72f4264f5e4f86c8fc1adfb49e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveGroundTorque: 7
+  moveGroundForce: 6
   moveAirForce: 3
   maxGroundSpeed: 20
   maxAirSpeed: 10
