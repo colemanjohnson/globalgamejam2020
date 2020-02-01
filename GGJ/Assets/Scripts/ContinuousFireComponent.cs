@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FireComponent : MonoBehaviour
+public class ContinuousFireComponent : MonoBehaviour
 {
     public float snowVolumeDepletePerFrame = 0.1f;
 
