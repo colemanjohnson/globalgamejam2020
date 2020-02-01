@@ -141,4 +141,4 @@ MonoBehaviour:
   snowVolume: 1
   minSnowVolume: 1
   maxSnowVolume: 100
-  snowAccumulationFactor: 0.001
+  snowAccumulationFactor: 0.01

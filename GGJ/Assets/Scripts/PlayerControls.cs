@@ -88,5 +88,6 @@ public class PlayerControls : MonoBehaviour
 
     void OnDeath()
     {
+    	SceneManager.LoadScene("Level1");
     }
 }
