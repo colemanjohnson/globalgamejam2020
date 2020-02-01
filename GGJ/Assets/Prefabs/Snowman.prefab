@@ -133,8 +133,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28aed72f4264f5e4f86c8fc1adfb49e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveForce: 5
-  maxSpeed: 15
+  moveGroundTorque: 7
+  moveAirForce: 3
+  maxGroundSpeed: 20
+  maxAirSpeed: 10
+  jumpSpeed: 10
   snowVolume: 1
   minSnowVolume: 1
   maxSnowVolume: 100
