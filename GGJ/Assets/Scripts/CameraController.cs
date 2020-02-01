@@ -14,8 +14,7 @@ public class CameraController : MonoBehaviour
     // LateUpdate is called after Update each frame
     void LateUpdate()
     {
-        Camera.main.orthographicSize = Mathf.Lerp( Camera.main.orthographicSize, player.transform.localScale.x * 5, 0.05f );
-        //Camera.main.orthographicSize = player.transform.localScale.x * 5;
+        Camera.main.orthographicSize = Mathf.MoveTowards( Camera.main.orthographicSize, player.transform.localScale.x * 5, 0.05f * Time.deltaTime );
         transform.position = player.transform.position + new Vector3( 0, 0, transform.position.z );
     }
 }
