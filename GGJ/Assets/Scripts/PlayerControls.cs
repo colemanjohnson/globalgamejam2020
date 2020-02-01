@@ -91,7 +91,7 @@ public class PlayerControls : MonoBehaviour
 	    	if ( verInput > 0 )
 	    	{
 	    		// jump
-	    		body.velocity += new Vector2( 0, jumpSpeed );
+	    		body.velocity = new Vector2( body.velocity.x, jumpSpeed );
 	    	}
 	    }
 	    else
@@ -100,4 +100,12 @@ public class PlayerControls : MonoBehaviour
 	    		body.AddForce( new Vector2( horInput * moveAirForce, 0 ) );
 	    }
     }
+
+	private void LateUpdate()
+	{
+		if ( transform.position.y < -50 )
+		{
+			Kill( CauseOfDeath.Falling );
+		}
+	}
 }
