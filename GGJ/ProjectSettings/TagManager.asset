@@ -13,9 +13,9 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
+  - Background
+  - Actors
+  - Terrain
   - 
   - 
   - 
@@ -40,4 +40,13 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 1370422657
+    locked: 0
+  - name: Terrain
+    uniqueID: 1710666697
+    locked: 0
+  - name: Actors
+    uniqueID: 3776575639
     locked: 0
