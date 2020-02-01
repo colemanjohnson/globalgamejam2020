@@ -11,7 +11,7 @@ public class PlayerControls : MonoBehaviour
 	public float maxSnowVolume = 100.0f;
 	public float snowAccumulationFactor = 0.001f;
 
-	void ChangeVolume( float change )
+	public void ChangeVolume( float change )
 	{
 		SetVolume( snowVolume + change );
 	}
@@ -21,7 +21,7 @@ public class PlayerControls : MonoBehaviour
 		snowVolume = Mathf.Clamp( volume, minSnowVolume, maxSnowVolume );
     	var transform = GetComponent<Transform>();
 
-    	float scale = Mathf.Sqrt( volume );
+    	float scale = Mathf.Sqrt( snowVolume );
     	transform.localScale = new Vector2( scale, scale );
 
     	/*
