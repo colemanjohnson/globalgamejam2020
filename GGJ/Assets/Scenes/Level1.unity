@@ -170,6 +170,16 @@ PrefabInstance:
       propertyPath: maxSpeed
       value: 100
       objectReference: {fileID: 0}
+    - target: {fileID: 2776119067293229910, guid: 98f4ac0bfd5d49b4983f4a8f6c326db2,
+        type: 3}
+      propertyPath: snowAccumulationFactor
+      value: 0.005
+      objectReference: {fileID: 0}
+    - target: {fileID: 2776119067293229910, guid: 98f4ac0bfd5d49b4983f4a8f6c326db2,
+        type: 3}
+      propertyPath: maxSnowVolume
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 3332576404995123211, guid: 98f4ac0bfd5d49b4983f4a8f6c326db2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -428,7 +438,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.1}
@@ -444,6 +454,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.8}
   m_EdgeRadius: 0
+--- !u!114 &1413079829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1413079825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a9fa14956676f74394b4fd1063a3a00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1542231541
 GameObject:
   m_ObjectHideFlags: 0
