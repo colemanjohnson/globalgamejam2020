@@ -5,8 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class PlayerControls : MonoBehaviour
 {
-	public float moveForce = 1.0f;
-	public float maxSpeed = 10.0f;
+	public float moveGroundTorque = 1.0f;
+	public float moveAirForce = 0.5f;
+
+	public float maxGroundSpeed = 10.0f;
+	public float maxAirSpeed = 5.0f;
+
+	public float jumpSpeed = 10.0f;
+
 	public float snowVolume = 1.0f;
 	public float minSnowVolume = 1.0f;
 	public float maxSnowVolume = 100.0f;
@@ -47,8 +53,8 @@ public class PlayerControls : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-    	float hor = Input.GetAxis( "Horizontal" );
-    	// float ver = Input.GetAxis( "Vertical" );
+    	float horInput = Input.GetAxis( "Horizontal" );
+    	float verInput = Input.GetAxis( "Vertical" );
 
     	var collider = GetComponent<CircleCollider2D>();
     	var transform = GetComponent<Transform>();
@@ -57,18 +63,29 @@ public class PlayerControls : MonoBehaviour
     	var other = Physics2D.OverlapCircle( new Vector2( transform.position.x, transform.position.y - 0.1f ), radius, LayerMask.GetMask( "Terrain" ) );
     	bool onGround = other != null;
 
+	    var body = GetComponent<Rigidbody2D>();
+	    float horSpeed = Mathf.Abs( body.velocity.x );
     	if ( onGround )
     	{
-	    	var body = GetComponent<Rigidbody2D>();
-	    	if ( body.velocity.magnitude < maxSpeed )
-	    		body.AddForce( new Vector2( hor * moveForce, 0 ) );
+	    	if ( body.velocity.magnitude < maxGroundSpeed )
+	    		body.AddTorque( -horInput * moveGroundTorque );
 
-	    	ChangeVolume( Mathf.Abs( body.velocity.x ) * snowAccumulationFactor );
+	    	ChangeVolume( horSpeed * snowAccumulationFactor );
+
+	    	if ( verInput > 0 )
+	    	{
+	    		// jump
+	    		body.velocity += new Vector2( 0, jumpSpeed );
+	    	}
+	    }
+	    else
+	    {
+	    	if ( horSpeed < maxAirSpeed )
+	    		body.AddForce( new Vector2( horInput * moveAirForce, 0 ) );
 	    }
     }
 
     void OnDeath()
     {
-    	SceneManager.LoadScene( "Level1" );
     }
 }

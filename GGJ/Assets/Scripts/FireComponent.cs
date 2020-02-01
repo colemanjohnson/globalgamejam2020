@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class FireComponent : MonoBehaviour
 {
+    public float snowVolumeDepletePerFrame = 0.1f;
 
     // Start is called before the first frame update
     void Start()
@@ -19,11 +20,6 @@ public class FireComponent : MonoBehaviour
 
     private void OnTriggerEnter2D( Collider2D collision )
     {
-        var player = collision.gameObject.GetComponent<PlayerControls>();
-        if ( player )
-        {
-            player.ChangeVolume( -1 );
-        }
     }
 
     private void OnTriggerStay2D( Collider2D collision )
@@ -31,7 +27,7 @@ public class FireComponent : MonoBehaviour
         var player = collision.gameObject.GetComponent<PlayerControls>();
         if ( player )
         {
-            player.ChangeVolume( -1 );
+            player.ChangeVolume( -snowVolumeDepletePerFrame );
         }
     }
 
@@ -39,4 +35,6 @@ public class FireComponent : MonoBehaviour
     {
         
     }
+
+
 }
