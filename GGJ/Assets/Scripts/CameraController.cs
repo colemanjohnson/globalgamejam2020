@@ -6,6 +6,8 @@ public class CameraController : MonoBehaviour
 {
     public PlayerControls player;        //Public variable to store a reference to the player game object
 
+    public float maxCameraDrift = 0.2f;
+
     // Use this for initialization
     void Start()
     {
@@ -15,6 +17,12 @@ public class CameraController : MonoBehaviour
     void LateUpdate()
     {
         Camera.main.orthographicSize = Mathf.MoveTowards( Camera.main.orthographicSize, player.transform.localScale.x * 5, 5 * Time.deltaTime );
-        transform.position = player.transform.position + new Vector3( 0, 0, transform.position.z );
+        var rb = player.GetComponent<Rigidbody2D>();
+        float speedPercent = rb.velocity.x / player.maxSpeed;
+        float viewportDrift = speedPercent * maxCameraDrift;
+        Vector3 centerPosition = Camera.main.ViewportToWorldPoint( new Vector3( 0.5f, 0.0f, 0.0f ) );
+        Vector3 position = Camera.main.ViewportToWorldPoint( new Vector3( 0.5f + viewportDrift, 0.0f, 0.0f ) );
+        float xOffset = position.x - centerPosition.x;
+        transform.position = player.transform.position + new Vector3( xOffset, 0, transform.position.z );
     }
 }

@@ -168,7 +168,7 @@ PrefabInstance:
     - target: {fileID: 2776119067293229910, guid: 98f4ac0bfd5d49b4983f4a8f6c326db2,
         type: 3}
       propertyPath: maxSpeed
-      value: 100
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2776119067293229910, guid: 98f4ac0bfd5d49b4983f4a8f6c326db2,
         type: 3}
@@ -570,6 +570,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1882878382}
+  maxCameraDrift: 0.2
 --- !u!114 &1542231546
 MonoBehaviour:
   m_ObjectHideFlags: 0
