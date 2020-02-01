@@ -53,12 +53,13 @@ public class PlayerControls : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-    	float horInput = Input.GetAxis( "Horizontal" );
-    	float verInput = Input.GetAxis( "Vertical" );
+    	float scale = transform.localScale.x;
+
+    	float horInput = Input.GetAxis( "Horizontal" ) * scale;
+    	float verInput = Input.GetAxis( "Vertical" ) * scale;
 
     	var collider = GetComponent<CircleCollider2D>();
-    	var transform = GetComponent<Transform>();
-    	float radius = collider.radius * transform.localScale.x;
+    	float radius = collider.radius * scale;
 
     	var other = Physics2D.OverlapCircle( new Vector2( transform.position.x, transform.position.y - 0.15f ), radius - 0.1f, LayerMask.GetMask( "Terrain" ) );
     	bool onGround = other != null;
