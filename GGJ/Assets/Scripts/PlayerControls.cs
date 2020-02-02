@@ -94,7 +94,14 @@ public class PlayerControls : MonoBehaviour
     	float scale = transform.localScale.x;
 
     	float horInput = Input.GetAxis( "Horizontal" ) * scale;
-    	float verInput = Input.GetAxis( "Vertical" ) * scale;
+    	bool jump = Input.GetButton( "Jump" );
+    	bool restart = Input.GetButton( "Submit" );
+
+    	if ( restart )
+    	{
+    		SceneManager.LoadScene( "Level1" );
+    		return;
+    	}
 
     	var collider = GetComponent<CircleCollider2D>();
     	float radius = collider.radius * scale;
@@ -119,7 +126,7 @@ public class PlayerControls : MonoBehaviour
 
 	    	ChangeVolume( horSpeed * snowAccumulationFactor );
 
-	    	if ( verInput > 0 )
+	    	if ( jump )
 	    	{
 	    		// jump
 	    		body.velocity = new Vector2( body.velocity.x, jumpSpeed );
