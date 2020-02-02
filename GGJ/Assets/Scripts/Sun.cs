@@ -5,8 +5,8 @@ using UnityEngine;
 public class Sun : MonoBehaviour
 {
 	public GameObject target = null;
-	public float speedFactor = 1;
-	public float minSpeed = 3;
+	public float acceleration = 0.1f;
+	public float maxSpeed = 6;
 
     // Start is called before the first frame update
     void Start()
@@ -19,10 +19,13 @@ public class Sun : MonoBehaviour
     {
         var toTarget = ( target.transform.position - transform.position );
         var dir = toTarget.normalized;
-        var dist = toTarget.magnitude;
 
-        float speed = Mathf.Max( dist * speedFactor, minSpeed ) * Time.deltaTime;
+        var body = GetComponent<Rigidbody2D>();
+        body.velocity += (Vector2)dir * acceleration;
 
-        transform.position = Vector3.MoveTowards( transform.position, target.transform.position, speed );
+        if ( body.velocity.magnitude > maxSpeed )
+        {
+        	body.velocity = body.velocity.normalized * maxSpeed;
+        }
     }
 }
