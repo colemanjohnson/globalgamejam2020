@@ -110,4 +110,12 @@ public class Sun : MonoBehaviour
 		AkSoundEngine.PostEvent( "sun_laugh", gameObject );
 		animator.SetTrigger( "PlayerDead" );
 	}
+
+	public void OnPlayerWin()
+	{
+		state = State.KeepAway;
+		stateTimer = 100000.0f;
+		// AkSoundEngine.PostEvent( "sun_laugh", gameObject );
+		animator.SetTrigger( "Dead" );
+	}
 }

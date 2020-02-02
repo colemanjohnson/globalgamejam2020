@@ -28,6 +28,8 @@ public class Finish : MonoBehaviour
     		body.freezeRotation = true;
     		body.isKinematic = true;
     		body.simulated = false;
+
+    		BroadcastMessage( "OnPlayerWin" );
     	}
     }
 }
