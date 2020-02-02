@@ -141,6 +141,37 @@
 								<ActiveSource Name="SMT_SnowRolling_Loop" ID="{3F5FA03E-EBFA-4636-AABA-A60300C24154}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="Laugh" ID="{9A960CF7-17F3-491A-999E-6DFD3EA9DCC3}" ShortID="369868561">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>42</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-480</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6B8FE0D5-F696-432A-B747-1471B8DE25AC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{042F57FB-B333-48AC-98CA-A26B1D569EF8}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Laugh" ID="{AA87FB9B-5BB5-4398-95D2-5343CF110280}" ShortID="297608433">
+									<Language>SFX</Language>
+									<AudioFile>Laugh.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Laugh" ID="{AA87FB9B-5BB5-4398-95D2-5343CF110280}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</ActorMixer>
 				<RandomSequenceContainer Name="Snowball Impacts" ID="{3ADB3A36-EBE5-4607-BDA7-7D42CCE97C94}" ShortID="618373677">
@@ -277,6 +308,113 @@
 							</ChildrenList>
 							<ActiveSourceList>
 								<ActiveSource Name="SMT_SnowballImpact_5" ID="{34E91E24-2309-4D1B-A4A3-6346975660A2}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Sun Swooshes" ID="{AFE5B006-FC4D-4A6E-8DB7-44ABC214214F}" ShortID="171202331">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6B8FE0D5-F696-432A-B747-1471B8DE25AC}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{042F57FB-B333-48AC-98CA-A26B1D569EF8}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="SMT_swooshfire_5" ID="{85EC64EA-9AA0-418A-BD36-DC486B124B53}" ShortID="359375671">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6B8FE0D5-F696-432A-B747-1471B8DE25AC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{042F57FB-B333-48AC-98CA-A26B1D569EF8}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SMT_swooshfire_5" ID="{77DF4E13-DBF1-40AF-B509-C6E0BCB9F287}" ShortID="659663667">
+									<Language>SFX</Language>
+									<AudioFile>SMT_swooshfire_5.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SMT_swooshfire_5" ID="{77DF4E13-DBF1-40AF-B509-C6E0BCB9F287}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SMT_swooshfire_2" ID="{86472A15-A511-4844-A9AA-EE3472EF3EE9}" ShortID="405437184">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6B8FE0D5-F696-432A-B747-1471B8DE25AC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{042F57FB-B333-48AC-98CA-A26B1D569EF8}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SMT_swooshfire_2" ID="{41B0EE29-1147-40DC-8947-6611C0149B95}" ShortID="567311487">
+									<Language>SFX</Language>
+									<AudioFile>SMT_swooshfire_2.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SMT_swooshfire_2" ID="{41B0EE29-1147-40DC-8947-6611C0149B95}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SMT_swooshfire_4" ID="{A40A6122-F78B-492F-960A-65004B051D01}" ShortID="449889861">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6B8FE0D5-F696-432A-B747-1471B8DE25AC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{042F57FB-B333-48AC-98CA-A26B1D569EF8}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SMT_swooshfire_4" ID="{168796FC-5B8F-41ED-9EA9-96A566EF7704}" ShortID="49764841">
+									<Language>SFX</Language>
+									<AudioFile>SMT_swooshfire_4.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SMT_swooshfire_4" ID="{168796FC-5B8F-41ED-9EA9-96A566EF7704}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SMT_swooshfire_3" ID="{DAB2D3E2-6432-4094-BC7B-222EFD6C2E36}" ShortID="78206973">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6B8FE0D5-F696-432A-B747-1471B8DE25AC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{042F57FB-B333-48AC-98CA-A26B1D569EF8}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SMT_swooshfire_3" ID="{309E3A83-3C84-443E-A183-042A1D30F161}" ShortID="359088285">
+									<Language>SFX</Language>
+									<AudioFile>SMT_swooshfire_3.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SMT_swooshfire_3" ID="{309E3A83-3C84-443E-A183-042A1D30F161}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SMT_swooshfire_1" ID="{9ACE576B-CD2C-4F84-B2DA-A58EDEDC95DE}" ShortID="137880171">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6B8FE0D5-F696-432A-B747-1471B8DE25AC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{042F57FB-B333-48AC-98CA-A26B1D569EF8}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SMT_swooshfire_1" ID="{A2E08B01-5DF8-4700-A607-B57ABA9E2CEB}" ShortID="834311902">
+									<Language>SFX</Language>
+									<AudioFile>SMT_swooshfire_1.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SMT_swooshfire_1" ID="{A2E08B01-5DF8-4700-A607-B57ABA9E2CEB}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>

@@ -76,6 +76,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="sun_laugh" ID="{9C850FDF-67E1-4C2D-8F5A-A44F9738C415}">
+					<ChildrenList>
+						<Action Name="" ID="{9605C82F-D265-453E-92AA-1A398951938C}" ShortID="307695189">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Laugh" ID="{9A960CF7-17F3-491A-999E-6DFD3EA9DCC3}" WorkUnitID="{B4627C02-2E5E-49CC-A855-14950A6AEF54}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="sun_swoosh" ID="{FF9D0CFE-AE25-4F5B-BE11-A538C12B2840}">
+					<ChildrenList>
+						<Action Name="" ID="{3E447E9E-6369-44C6-BCD8-49408968879B}" ShortID="544442428">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Sun Swooshes" ID="{AFE5B006-FC4D-4A6E-8DB7-44ABC214214F}" WorkUnitID="{B4627C02-2E5E-49CC-A855-14950A6AEF54}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
