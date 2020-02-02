@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 8380339219716735235}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -14.88, y: 5, z: -2.4995093}
-  m_LocalScale: {x: 10, y: 10, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -97,9 +97,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf97db6c7e6356e4d86ea7a22dc2e66f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 0}
   target: {fileID: 356464342908722091, guid: 98f4ac0bfd5d49b4983f4a8f6c326db2, type: 3}
   acceleration: 0.18
   maxSpeed: 8
+  keepAwayDistance: 10
+  keepAwaySpeedFactor: 0.25
+  chargeSpeed: 10
 --- !u!114 &8380339219716735245
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -128,7 +132,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.11
+  m_Radius: 0.7
 --- !u!50 &-8747657711114887840
 Rigidbody2D:
   serializedVersion: 4
