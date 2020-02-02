@@ -31,22 +31,97 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 94e91b35bed8664497b99622ac5d2c8d
     GuidInternal: 
-    m_lastTime: -8586210708278655265
-    List: []
+    m_lastTime: -8586209932924280245
+    List:
+    - name: SFX
+      guid: 2ee1cb8079bdd94d98e680eaa43b99db
+      id: 393239870
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX
+        ObjectType: 7
+      Path: Default Work Unit\SFX
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 5153763ffd5be947b2c2f60772f2d783
     GuidInternal: 
-    m_lastTime: -8586210708279403289
-    List: []
+    m_lastTime: -8586209952799814219
+    List:
+    - name: music_start
+      guid: de98b1e66ac17f4ca1039337eb10542a
+      id: 3725903807
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: music_start
+        ObjectType: 3
+      Path: Default Work Unit\music_start
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: music_stop
+      guid: d22923afede1cb49962bd9e1cc90ffd9
+      id: 3227181061
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: music_stop
+        ObjectType: 3
+      Path: Default Work Unit\music_stop
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: snowball_roll_start
+      guid: ef4388131dc37446ab49ed33a2651310
+      id: 634408506
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: snowball_roll_start
+        ObjectType: 3
+      Path: Default Work Unit\snowball_roll_start
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: snowball_roll_stop
+      guid: ecaf7b7f4f71814dabc67b58cee4dd3b
+      id: 359931474
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: snowball_roll_stop
+        ObjectType: 3
+      Path: Default Work Unit\snowball_roll_stop
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: aa8ce31ec7a19a4b89246af6d0e53626
     GuidInternal: 
-    m_lastTime: -8586210708278904609
-    List: []
+    m_lastTime: -8586209943823423984
+    List:
+    - name: snowball_size
+      guid: f6e3aa10ea06f94fa8f578aef77d2346
+      id: 880657425
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: snowball_size
+        ObjectType: 13
+      Path: Default Work Unit\snowball_size
+    - name: snowball_speed
+      guid: e3286043dc163e4ba941bdc90bf78685
+      id: 1173609391
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: snowball_speed
+        ObjectType: 13
+      Path: Default Work Unit\snowball_speed
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
@@ -68,6 +143,9 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8586210708278964434
     List: []
-  ExpandedItems: []
+  ExpandedItems:
+  - /GGJ_WwiseProject
+  - /GGJ_WwiseProject/Events
+  - /GGJ_WwiseProject/Events/Default Work Unit
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

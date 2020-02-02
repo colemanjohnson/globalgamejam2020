@@ -40,7 +40,7 @@ public class PlayerControls : MonoBehaviour
 
 	void Die()
 	{
-		Destroy( gameObject );
+		gameObject.SetActive( false );
 	}
 
 	void SetVolume( float volume )
