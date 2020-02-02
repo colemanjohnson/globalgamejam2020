@@ -10,6 +10,7 @@ public class Sun : MonoBehaviour
 	public float maxSpeed = 6;
 	public float stateTime = 5;
 	public float keepAwayDistance = 10.0f;
+	public float keepAwaySpeedFactor = 0.25f;
 
 	private bool attacking = false;
 	private float stateTimer = 0;
@@ -47,7 +48,7 @@ public class Sun : MonoBehaviour
         else
         {
         	float dist = toTarget.magnitude - keepAwayDistance;
-        	body.velocity += (Vector2)dir * dist / 2;
+        	body.velocity += (Vector2)dir * dist * keepAwaySpeedFactor;
         }
 
         if ( body.velocity.magnitude > maxSpeed )
