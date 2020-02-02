@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4754257969900438317}
   - component: {fileID: 7708803957514288992}
   - component: {fileID: -2664119508461973764}
-  - component: {fileID: 2172131349261262515}
+  - component: {fileID: 744084888754131963}
   m_Layer: 9
   m_Name: SnowmanBody
   m_TagString: Finish
@@ -72,7 +72,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 6072321e6e80f6f489fdb015ed46c94e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5bb9a77eed8a220468c28cec063b9b23, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -95,8 +95,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a939721e561630846be3ee8af14a8fc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!70 &2172131349261262515
-CapsuleCollider2D:
+  sun: {fileID: 0}
+--- !u!58 &744084888754131963
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -109,5 +110,5 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1, y: 2}
-  m_Direction: 0
+  serializedVersion: 2
+  m_Radius: 0.16
