@@ -10,10 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1363156131421444611}
   - component: {fileID: 7925857025824217403}
-  - component: {fileID: 4164117441313792793}
   - component: {fileID: 3800326080395726399}
   - component: {fileID: 4164117441313792797}
-  - component: {fileID: 4164117441313792796}
   - component: {fileID: 4164117441313792799}
   - component: {fileID: 4164117441313792798}
   - component: {fileID: 4164117441313792771}
@@ -89,22 +87,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &4164117441313792793
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4164117441313792792}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0683da317188df74f999345255dae3a8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waypoints:
-  - {fileID: 0}
-  - {fileID: 0}
-  circular: 0
 --- !u!114 &3800326080395726399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -137,22 +119,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!58 &4164117441313792796
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4164117441313792792}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.1}
-  serializedVersion: 2
-  m_Radius: 0.4
 --- !u!58 &4164117441313792799
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -202,7 +168,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a9fa14956676f74394b4fd1063a3a00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  snowVolumeDepletePerFrame: 0.1
+  snowVolumeDepletePerFrame: 0.25
 --- !u!114 &4164117441313792770
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -215,6 +181,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9636af135ec0ca24ba1bb71aa303c45f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 10
   despawnTime: 10
-  initTime: 0

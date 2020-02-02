@@ -27,10 +27,14 @@ public class FireballBehavior : MonoBehaviour
         var angle = 90 + Mathf.Atan2( dir.y, dir.x ) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.AngleAxis( angle, Vector3.forward );
         GetComponent<Rigidbody2D>().velocity = speed * dir.normalized;
+        AkSoundEngine.PostEvent( "fireball", gameObject );
     }
 
-    private void OnCollisionEnter2D( Collision2D collision )
+    private void OnTriggerEnter2D( Collider2D collision )
     {
-        Destroy( gameObject );
+        if ( collision.gameObject.layer == LayerMask.NameToLayer( "Terrain" ) )
+        {
+            Destroy( gameObject );
+        }
     }
 }
