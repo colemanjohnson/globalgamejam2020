@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{1EE38CAA-A1C7-4B9A-8924-6AF6D0E53626}" SchemaVersion="94">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{1EE38CAA-A1C7-4B9A-8924-6AF6D0E53626}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{1EE38CAA-A1C7-4B9A-8924-6AF6D0E53626}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="snowball_size" ID="{10AAE3F6-06EA-4FF9-A8F5-78AEF77D2346}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="snowball_speed" ID="{436028E3-16DC-4B3E-A941-BDC90BF78685}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="10"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>

@@ -3,6 +3,16 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{8EB26110-F8E7-4C20-9FC8-03C59B7C5753}">
 			<PropertyList>
+				<Property Name="AudioFilesImporter\Path" Type="string" Value="C:\Users\colem\Desktop\GitHub\globalgamejam2020\GGJ\Assets\Audio"/>
+				<Property Name="Event Action List\{138843EF-C31D-4674-AB49-ED33A2651310}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{7F7BAFEC-714F-4D81-ABC6-7B58CEE4DD3B}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{811C26BB-077D-4205-AC5A-D34E1347899F}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{8B3174C4-DA4B-4074-8E28-FFA7E2E04A0E}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{AF2329D2-E1ED-49CB-962B-D9E1CC90FFD9}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{D416FA8B-9BD6-4EF9-A59C-796BFE54857C}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{D8C07663-EDEE-427E-8913-0DADF94B30A3}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{E5771B49-63F2-4BED-BF10-27BC1825D58A}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{E6B198DE-C16A-4C7F-A103-9337EB10542A}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
 					<ValueList>
 						<Value Platform="Windows"></Value>
@@ -17,7 +27,7 @@
 				</Property>
 				<Property Name="GenerateSoundBanks\x64_SelectedLanguages" Type="string" Value="BvDMKA=="/>
 				<Property Name="GenerateSoundBanks\x64_SelectedPlatforms" Type="string" Value="jubcBprpb0W/yL0WDM/IEA=="/>
-				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value=""/>
+				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value="LuHLgHm92U2Y5oDqpDuZ2w=="/>
 				<Property Name="HardwareController\CurrentSession" Type="string" Value="{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}"/>
 				<Property Name="MeterView\LastObject1" Type="string" Value="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
 				<Property Name="MeterView\MeterMode1" Type="int32" Value="1"/>

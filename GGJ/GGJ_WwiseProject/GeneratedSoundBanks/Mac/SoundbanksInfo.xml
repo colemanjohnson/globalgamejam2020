@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="11" SoundbankVersion="134">
+	<RootPaths>
+		<ProjectRoot>C:\Users\colem\Desktop\GitHub\globalgamejam2020\GGJ\GGJ_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\colem\Desktop\GitHub\globalgamejam2020\GGJ\GGJ_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\colem\Desktop\GitHub\globalgamejam2020\GGJ\GGJ_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\colem\Desktop\GitHub\globalgamejam2020\GGJ\GGJ_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles>
+		<File Id="918278237" Language="SFX">
+			<ShortName>snowball game loop.wav</ShortName>
+			<Path>SFX\snowball game loop_D79FB2B7.wem</Path>
+		</File>
+	</StreamedFiles>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="393239870" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\SFX</ObjectPath>
+			<ShortName>SFX</ShortName>
+			<Path>SFX.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3725903807" Name="music_start" ObjectPath="\Events\Default Work Unit\music_start" DurationType="Infinite"/>
+				<Event Id="3227181061" Name="music_stop" ObjectPath="\Events\Default Work Unit\music_stop" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="634408506" Name="snowball_roll_start" ObjectPath="\Events\Default Work Unit\snowball_roll_start" DurationType="Infinite"/>
+				<Event Id="359931474" Name="snowball_roll_stop" ObjectPath="\Events\Default Work Unit\snowball_roll_stop" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+			</IncludedEvents>
+			<ReferencedStreamedFiles>
+				<File Id="918278237"/>
+			</ReferencedStreamedFiles>
+			<IncludedMemoryFiles>
+				<File Id="338418251" Language="SFX">
+					<ShortName>SMT_SnowRolling_Loop.wav</ShortName>
+					<Path>SFX\SMT_SnowRolling_Loop_D79FB2B7.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

@@ -64,7 +64,7 @@ MonoBehaviour:
   - AdvancedSettings.m_DebugOutOfRangeCheckEnabled
   - AdvancedSettings.m_DebugOutOfRangeLimit
   UserSettings:
-    m_BasePath: Audio\GeneratedSoundBanks
+    m_BasePath: GGJ_WwiseProject\GeneratedSoundBanks
     m_StartupLanguage: English(US)
     m_PreparePoolSize: 0
     m_CallbackManagerBufferSize: 4096

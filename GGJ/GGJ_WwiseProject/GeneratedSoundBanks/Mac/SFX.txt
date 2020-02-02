@@ -1,0 +1,16 @@
+Event	ID	Name			Wwise Object Path	Notes
+	359931474	snowball_roll_stop			\Default Work Unit\snowball_roll_stop	
+	634408506	snowball_roll_start			\Default Work Unit\snowball_roll_start	
+	3227181061	music_stop			\Default Work Unit\music_stop	
+	3725903807	music_start			\Default Work Unit\music_start	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	880657425	snowball_size			\Default Work Unit\snowball_size	
+	1173609391	snowball_speed			\Default Work Unit\snowball_speed	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	338418251	SMT_SnowRolling_Loop	C:\Users\colem\Desktop\GitHub\globalgamejam2020\GGJ\GGJ_WwiseProject\.cache\Mac\SFX\SMT_SnowRolling_Loop_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\SMT_SnowRolling_Loop		248446
+
+Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
+	918278237	snowball game loop	C:\Users\colem\Desktop\GitHub\globalgamejam2020\GGJ\GGJ_WwiseProject\.cache\Mac\SFX\snowball game loop_D79FB2B7.wem	918278237.wem	\Actor-Mixer Hierarchy\Default Work Unit\snowball game loop	
+
