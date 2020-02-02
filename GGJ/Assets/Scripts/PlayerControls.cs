@@ -94,6 +94,7 @@ public class PlayerControls : MonoBehaviour
     	float scale = transform.localScale.x;
 
     	float horInput = Input.GetAxis( "Horizontal" ) * scale;
+    	float verInput = Input.GetAxis( "Vertical" );
     	bool jump = Input.GetButton( "Jump" );
     	bool restart = Input.GetButton( "Submit" );
 
@@ -126,7 +127,7 @@ public class PlayerControls : MonoBehaviour
 
 	    	ChangeVolume( horSpeed * snowAccumulationFactor );
 
-	    	if ( jump )
+	    	if ( jump || verInput > 0 )
 	    	{
 	    		// jump
 	    		body.velocity = new Vector2( body.velocity.x, jumpSpeed );
