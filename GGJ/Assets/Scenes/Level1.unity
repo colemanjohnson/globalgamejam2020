@@ -735,6 +735,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -8747657711114887840, guid: f9f7c53210e2dec448908b1ccc18bd17,
+        type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8747657711114887840, guid: f9f7c53210e2dec448908b1ccc18bd17,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 8380339219716735235, guid: f9f7c53210e2dec448908b1ccc18bd17,
         type: 3}
       propertyPath: m_Name
@@ -810,6 +820,21 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 1301142900}
+    - target: {fileID: 8380339219716735246, guid: f9f7c53210e2dec448908b1ccc18bd17,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 316786997}
+    - target: {fileID: 8380339219716735246, guid: f9f7c53210e2dec448908b1ccc18bd17,
+        type: 3}
+      propertyPath: maxSpeed
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8380339219716735246, guid: f9f7c53210e2dec448908b1ccc18bd17,
+        type: 3}
+      propertyPath: acceleration
+      value: 0.15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9f7c53210e2dec448908b1ccc18bd17, type: 3}
 --- !u!114 &1882878382 stripped
