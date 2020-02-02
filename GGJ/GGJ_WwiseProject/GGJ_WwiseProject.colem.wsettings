@@ -5,6 +5,9 @@
 			<PropertyList>
 				<Property Name="AudioFilesImporter\Path" Type="string" Value="C:\Users\colem\Desktop\GitHub\globalgamejam2020\GGJ\Assets\Audio"/>
 				<Property Name="Event Action List\{138843EF-C31D-4674-AB49-ED33A2651310}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{26D1056F-A384-4A44-8EA7-B98C6C91071A}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{5FABA754-0EC3-4D2C-8EE8-632CC69B1364}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{73134DF3-4743-4932-A990-10BB55EB2A3C}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{7F7BAFEC-714F-4D81-ABC6-7B58CEE4DD3B}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{811C26BB-077D-4205-AC5A-D34E1347899F}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{8B3174C4-DA4B-4074-8E28-FFA7E2E04A0E}\x64_Expand States" Type="string" Value=""/>

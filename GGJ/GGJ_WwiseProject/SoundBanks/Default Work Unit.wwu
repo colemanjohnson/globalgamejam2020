@@ -10,6 +10,7 @@
 						<ObjectRef Name="music_stop" ID="{AF2329D2-E1ED-49CB-962B-D9E1CC90FFD9}" WorkUnitID="{3F765351-5BFD-47E9-B2C2-F60772F2D783}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="sun_laugh" ID="{9C850FDF-67E1-4C2D-8F5A-A44F9738C415}" WorkUnitID="{3F765351-5BFD-47E9-B2C2-F60772F2D783}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="music_start" ID="{E6B198DE-C16A-4C7F-A103-9337EB10542A}" WorkUnitID="{3F765351-5BFD-47E9-B2C2-F60772F2D783}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="fireball" ID="{5FABA754-0EC3-4D2C-8EE8-632CC69B1364}" WorkUnitID="{3F765351-5BFD-47E9-B2C2-F60772F2D783}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="snowball_roll_stop" ID="{7F7BAFEC-714F-4D81-ABC6-7B58CEE4DD3B}" WorkUnitID="{3F765351-5BFD-47E9-B2C2-F60772F2D783}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="sun_swoosh" ID="{FF9D0CFE-AE25-4F5B-BE11-A538C12B2840}" WorkUnitID="{3F765351-5BFD-47E9-B2C2-F60772F2D783}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>

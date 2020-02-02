@@ -21,13 +21,14 @@
 			<ShortName>SFX</ShortName>
 			<Path>SFX.bnk</Path>
 			<IncludedEvents>
+				<Event Id="3841200954" Name="fireball" ObjectPath="\Events\Default Work Unit\fireball" DurationType="OneShot" DurationMin="6.440604" DurationMax="6.440604"/>
 				<Event Id="3725903807" Name="music_start" ObjectPath="\Events\Default Work Unit\music_start" DurationType="Infinite"/>
 				<Event Id="3227181061" Name="music_stop" ObjectPath="\Events\Default Work Unit\music_stop" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="1747864848" Name="snowball_impact" ObjectPath="\Events\Default Work Unit\snowball_impact" DurationType="OneShot" DurationMin="0.515771" DurationMax="0.658833"/>
 				<Event Id="634408506" Name="snowball_roll_start" ObjectPath="\Events\Default Work Unit\snowball_roll_start" DurationType="Infinite"/>
 				<Event Id="359931474" Name="snowball_roll_stop" ObjectPath="\Events\Default Work Unit\snowball_roll_stop" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="2844603915" Name="sun_laugh" ObjectPath="\Events\Default Work Unit\sun_laugh" DurationType="OneShot" DurationMin="1.911801" DurationMax="1.911801"/>
-				<Event Id="1456083321" Name="sun_swoosh" ObjectPath="\Events\Default Work Unit\sun_swoosh" DurationType="OneShot" DurationMin="0.852958" DurationMax="1.379396"/>
+				<Event Id="1456083321" Name="sun_swoosh" ObjectPath="\Events\Default Work Unit\sun_swoosh" DurationType="OneShot" DurationMin="1.027833" DurationMax="1.379396"/>
 			</IncludedEvents>
 			<ReferencedStreamedFiles>
 				<File Id="918278237"/>
@@ -52,6 +53,10 @@
 				<File Id="297608433" Language="SFX">
 					<ShortName>Laugh.wav</ShortName>
 					<Path>SFX\Laugh_10C4C929.wem</Path>
+				</File>
+				<File Id="309110493" Language="SFX">
+					<ShortName>SMT_Fire_Loop.wav</ShortName>
+					<Path>SFX\SMT_Fire_Loop_10C4C929.wem</Path>
 				</File>
 				<File Id="338418251" Language="SFX">
 					<ShortName>SMT_SnowRolling_Loop.wav</ShortName>

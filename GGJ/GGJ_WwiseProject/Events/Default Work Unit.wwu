@@ -101,6 +101,36 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="fireball" ID="{5FABA754-0EC3-4D2C-8EE8-632CC69B1364}">
+					<ChildrenList>
+						<Action Name="" ID="{9ACCB5A3-44B8-46C3-95FD-5312DC2D84C8}" ShortID="575418291">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SMT_Fire_Loop" ID="{975D7ADF-14E2-4C0F-8BFA-6D400A279480}" WorkUnitID="{B4627C02-2E5E-49CC-A855-14950A6AEF54}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{74AB3257-2930-4AA9-8257-8F40E145E20B}" ShortID="522880837">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Fireballs" ID="{1DBDD783-43A6-426A-A04C-228190DC6694}" WorkUnitID="{B4627C02-2E5E-49CC-A855-14950A6AEF54}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{CAF1CA4A-F46D-44CF-8E53-09F2EF0CB79A}" ShortID="343215898">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Delay" Type="Real64" Value="1"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SMT_Fire_Loop" ID="{975D7ADF-14E2-4C0F-8BFA-6D400A279480}" WorkUnitID="{B4627C02-2E5E-49CC-A855-14950A6AEF54}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

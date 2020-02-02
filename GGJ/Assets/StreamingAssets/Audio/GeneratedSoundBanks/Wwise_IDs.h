@@ -13,6 +13,7 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID FIREBALL = 3841200954U;
         static const AkUniqueID MUSIC_START = 3725903807U;
         static const AkUniqueID MUSIC_STOP = 3227181061U;
         static const AkUniqueID SNOWBALL_IMPACT = 1747864848U;
