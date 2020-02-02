@@ -36,6 +36,7 @@ public class PlayerControls : MonoBehaviour
 	{
 		// Do something I guess
 		PlayerDeath.Invoke();
+		gameObject.SetActive( false );
 	}
 
 	void SetVolume( float volume )

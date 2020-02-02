@@ -7,6 +7,12 @@ public class LevelManager : MonoBehaviour
 {
     public void ReloadLevel()
     {
+        StartCoroutine( DoReload() );
+    }
+
+    IEnumerator DoReload()
+    {
+        yield return new WaitForSeconds( 2.0f );
         SceneManager.LoadScene( SceneManager.GetActiveScene().name );
     }
 }

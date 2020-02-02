@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Sun : MonoBehaviour
 {
+    public Animator animator;
 	public GameObject target = null;
 	public float acceleration = 0.1f;
 	public float maxSpeed = 6;
@@ -11,7 +12,6 @@ public class Sun : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
     }
 
     // Update is called once per frame
@@ -27,5 +27,7 @@ public class Sun : MonoBehaviour
         {
         	body.velocity = body.velocity.normalized * maxSpeed;
         }
+
+        animator.SetFloat( "AttackVelocity", body.velocity.magnitude );
     }
 }
