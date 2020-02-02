@@ -99,7 +99,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 356464342908722091, guid: 98f4ac0bfd5d49b4983f4a8f6c326db2, type: 3}
   acceleration: 0.2
-  maxSpeed: 6
+  maxSpeed: 8
 --- !u!114 &8380339219716735245
 MonoBehaviour:
   m_ObjectHideFlags: 0
