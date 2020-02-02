@@ -97,6 +97,12 @@ public class PlayerControls : MonoBehaviour
     	float verInput = Input.GetAxis( "Vertical" );
     	bool jump = Input.GetButton( "Jump" );
     	bool restart = Input.GetButton( "Submit" );
+    	bool quit = Input.GetButton( "Cancel" );
+
+    	if ( quit )
+    	{
+    		Application.Quit();
+    	}
 
     	if ( restart )
     	{
