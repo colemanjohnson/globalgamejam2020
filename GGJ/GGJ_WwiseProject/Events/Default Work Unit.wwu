@@ -65,6 +65,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="snowball_impact" ID="{C8877222-89B7-465C-9C5D-4604B7FFF17D}">
+					<ChildrenList>
+						<Action Name="" ID="{7626B3D3-6E64-4918-82E3-0ED0FDBC925F}" ShortID="658594964">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Snowball Impacts" ID="{3ADB3A36-EBE5-4607-BDA7-7D42CCE97C94}" WorkUnitID="{B4627C02-2E5E-49CC-A855-14950A6AEF54}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

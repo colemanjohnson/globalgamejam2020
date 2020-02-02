@@ -146,6 +146,34 @@
 				<RandomSequenceContainer Name="Snowball Impacts" ID="{3ADB3A36-EBE5-4607-BDA7-7D42CCE97C94}" ShortID="618373677">
 					<PropertyList>
 						<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+						<Property Name="Volume" Type="Real64">
+							<RTPCList>
+								<RTPC Name="" ID="{4C700107-BECD-498F-B7B7-771B9E1E92BA}" ShortID="615020436">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="snowball_size" ID="{10AAE3F6-06EA-4FF9-A8F5-78AEF77D2346}" WorkUnitID="{1EE38CAA-A1C7-4B9A-8924-6AF6D0E53626}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{5C6CF1D3-FF21-46DD-9D30-9A0D4407C13B}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-10.80806</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>100</XPos>
+												<YPos>0</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">

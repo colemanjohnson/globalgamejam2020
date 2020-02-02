@@ -1,6 +1,7 @@
 Event	ID	Name			Wwise Object Path	Notes
 	359931474	snowball_roll_stop			\Default Work Unit\snowball_roll_stop	
 	634408506	snowball_roll_start			\Default Work Unit\snowball_roll_start	
+	1747864848	snowball_impact			\Default Work Unit\snowball_impact	
 	3227181061	music_stop			\Default Work Unit\music_stop	
 	3725903807	music_start			\Default Work Unit\music_start	
 
@@ -9,7 +10,12 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	1173609391	snowball_speed			\Default Work Unit\snowball_speed	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	26972976	SMT_SnowballImpact_5	C:\Users\colem\Desktop\GitHub\globalgamejam2020\GGJ\GGJ_WwiseProject\.cache\Mac\SFX\SMT_SnowballImpact_5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Snowball Impacts\SMT_SnowballImpact_5		51972
+	105283859	SMT_SnowballImpact_4	C:\Users\colem\Desktop\GitHub\globalgamejam2020\GGJ\GGJ_WwiseProject\.cache\Mac\SFX\SMT_SnowballImpact_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Snowball Impacts\SMT_SnowballImpact_4		63312
+	119668863	SMT_SnowballImpact_1	C:\Users\colem\Desktop\GitHub\globalgamejam2020\GGJ\GGJ_WwiseProject\.cache\Mac\SFX\SMT_SnowballImpact_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Snowball Impacts\SMT_SnowballImpact_1		49578
 	338418251	SMT_SnowRolling_Loop	C:\Users\colem\Desktop\GitHub\globalgamejam2020\GGJ\GGJ_WwiseProject\.cache\Mac\SFX\SMT_SnowRolling_Loop_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\SMT_SnowRolling_Loop		248446
+	470869414	SMT_SnowballImpact_2	C:\Users\colem\Desktop\GitHub\globalgamejam2020\GGJ\GGJ_WwiseProject\.cache\Mac\SFX\SMT_SnowballImpact_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Snowball Impacts\SMT_SnowballImpact_2		51596
+	753067744	SMT_SnowballImpact_3	C:\Users\colem\Desktop\GitHub\globalgamejam2020\GGJ\GGJ_WwiseProject\.cache\Mac\SFX\SMT_SnowballImpact_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Snowball Impacts\SMT_SnowballImpact_3		60792
 
 Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
 	918278237	snowball game loop	C:\Users\colem\Desktop\GitHub\globalgamejam2020\GGJ\GGJ_WwiseProject\.cache\Mac\SFX\snowball game loop_D79FB2B7.wem	918278237.wem	\Actor-Mixer Hierarchy\Default Work Unit\snowball game loop	

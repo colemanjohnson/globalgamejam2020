@@ -91,6 +91,8 @@ public class PlayerControls : MonoBehaviour
 		if ( onGround != nowOnGround )
 		{
 			onGround = nowOnGround;
+			if ( nowOnGround )
+				AkSoundEngine.PostEvent( "snowball_impact", gameObject );
 			AkSoundEngine.PostEvent( nowOnGround ? "snowball_roll_start" : "snowball_roll_stop", gameObject );
 		}
 
