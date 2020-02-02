@@ -99,4 +99,10 @@ public class Sun : MonoBehaviour
         	body.velocity = body.velocity.normalized * curMaxSpeed;
         }
     }
+
+	public void OnPlayerDeath()
+	{
+		AkSoundEngine.PostEvent( "sun_laugh", gameObject );
+		animator.SetTrigger( "PlayerDead" );
+	}
 }

@@ -29,6 +29,8 @@ public class PlayerControls : MonoBehaviour
 
 	private bool onGround;
 
+	private bool alive = true;
+
 	public void ChangeVolume( float change )
 	{
 		SetVolume( snowVolume + change );
@@ -36,6 +38,10 @@ public class PlayerControls : MonoBehaviour
 
 	public void Kill( CauseOfDeath causeOfDeath )
 	{
+		if ( !alive )
+			return;
+
+		alive = false;
 		// Do something I guess
 		PlayerDeath.Invoke();
 	}
@@ -47,6 +53,9 @@ public class PlayerControls : MonoBehaviour
 
 	void SetVolume( float volume )
 	{
+		if ( !alive )
+			return;
+
 		snowVolume = Mathf.Min( volume, maxSnowVolume );
 
 		AkSoundEngine.SetRTPCValue( "snowball_size", snowVolume );
@@ -71,6 +80,7 @@ public class PlayerControls : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
+		alive = true;
         SetVolume( snowVolume );
     }
 
@@ -119,13 +129,5 @@ public class PlayerControls : MonoBehaviour
 
 		horSpeed = Mathf.Abs( body.velocity.x );
 		AkSoundEngine.SetRTPCValue( "snowball_speed", horSpeed );
-	}
-
-	private void LateUpdate()
-	{
-		if ( transform.position.y < -50 )
-		{
-			Kill( CauseOfDeath.Falling );
-		}
 	}
 }

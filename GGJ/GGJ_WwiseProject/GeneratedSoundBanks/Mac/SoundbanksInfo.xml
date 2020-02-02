@@ -23,18 +23,31 @@
 			<IncludedEvents>
 				<Event Id="3725903807" Name="music_start" ObjectPath="\Events\Default Work Unit\music_start" DurationType="Infinite"/>
 				<Event Id="3227181061" Name="music_stop" ObjectPath="\Events\Default Work Unit\music_stop" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1747864848" Name="snowball_impact" ObjectPath="\Events\Default Work Unit\snowball_impact" DurationType="OneShot" DurationMin="0.515771" DurationMax="0.658833"/>
 				<Event Id="634408506" Name="snowball_roll_start" ObjectPath="\Events\Default Work Unit\snowball_roll_start" DurationType="Infinite"/>
 				<Event Id="359931474" Name="snowball_roll_stop" ObjectPath="\Events\Default Work Unit\snowball_roll_stop" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="2844603915" Name="sun_laugh" ObjectPath="\Events\Default Work Unit\sun_laugh" DurationType="OneShot" DurationMin="2.313268" DurationMax="2.313268"/>
+				<Event Id="2844603915" Name="sun_laugh" ObjectPath="\Events\Default Work Unit\sun_laugh" DurationType="OneShot" DurationMin="1.911801" DurationMax="1.911801"/>
 				<Event Id="1456083321" Name="sun_swoosh" ObjectPath="\Events\Default Work Unit\sun_swoosh" DurationType="OneShot" DurationMin="0.852958" DurationMax="1.379396"/>
 			</IncludedEvents>
 			<ReferencedStreamedFiles>
 				<File Id="918278237"/>
 			</ReferencedStreamedFiles>
 			<IncludedMemoryFiles>
+				<File Id="26972976" Language="SFX">
+					<ShortName>SMT_SnowballImpact_5.wav</ShortName>
+					<Path>SFX\SMT_SnowballImpact_5_10C4C929.wem</Path>
+				</File>
 				<File Id="49764841" Language="SFX">
 					<ShortName>SMT_swooshfire_4.wav</ShortName>
 					<Path>SFX\SMT_swooshfire_4_10C4C929.wem</Path>
+				</File>
+				<File Id="105283859" Language="SFX">
+					<ShortName>SMT_SnowballImpact_4.wav</ShortName>
+					<Path>SFX\SMT_SnowballImpact_4_10C4C929.wem</Path>
+				</File>
+				<File Id="119668863" Language="SFX">
+					<ShortName>SMT_SnowballImpact_1.wav</ShortName>
+					<Path>SFX\SMT_SnowballImpact_1_10C4C929.wem</Path>
 				</File>
 				<File Id="297608433" Language="SFX">
 					<ShortName>Laugh.wav</ShortName>
@@ -48,6 +61,10 @@
 					<ShortName>SMT_swooshfire_3.wav</ShortName>
 					<Path>SFX\SMT_swooshfire_3_10C4C929.wem</Path>
 				</File>
+				<File Id="470869414" Language="SFX">
+					<ShortName>SMT_SnowballImpact_2.wav</ShortName>
+					<Path>SFX\SMT_SnowballImpact_2_10C4C929.wem</Path>
+				</File>
 				<File Id="567311487" Language="SFX">
 					<ShortName>SMT_swooshfire_2.wav</ShortName>
 					<Path>SFX\SMT_swooshfire_2_10C4C929.wem</Path>
@@ -55,6 +72,10 @@
 				<File Id="659663667" Language="SFX">
 					<ShortName>SMT_swooshfire_5.wav</ShortName>
 					<Path>SFX\SMT_swooshfire_5_10C4C929.wem</Path>
+				</File>
+				<File Id="753067744" Language="SFX">
+					<ShortName>SMT_SnowballImpact_3.wav</ShortName>
+					<Path>SFX\SMT_SnowballImpact_3_10C4C929.wem</Path>
 				</File>
 				<File Id="834311902" Language="SFX">
 					<ShortName>SMT_swooshfire_1.wav</ShortName>

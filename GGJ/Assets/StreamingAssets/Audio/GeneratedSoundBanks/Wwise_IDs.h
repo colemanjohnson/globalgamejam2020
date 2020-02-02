@@ -15,6 +15,7 @@ namespace AK
     {
         static const AkUniqueID MUSIC_START = 3725903807U;
         static const AkUniqueID MUSIC_STOP = 3227181061U;
+        static const AkUniqueID SNOWBALL_IMPACT = 1747864848U;
         static const AkUniqueID SNOWBALL_ROLL_START = 634408506U;
         static const AkUniqueID SNOWBALL_ROLL_STOP = 359931474U;
         static const AkUniqueID SUN_LAUGH = 2844603915U;
