@@ -27,6 +27,8 @@ public class PlayerControls : MonoBehaviour
 	public float maxSnowVolume = 100.0f;
 	public float snowAccumulationFactor = 0.001f;
 
+	private bool onGround;
+
 	public void ChangeVolume( float change )
 	{
 		SetVolume( snowVolume + change );
@@ -46,6 +48,8 @@ public class PlayerControls : MonoBehaviour
 	void SetVolume( float volume )
 	{
 		snowVolume = Mathf.Min( volume, maxSnowVolume );
+
+		AkSoundEngine.SetRTPCValue( "snowball_size", snowVolume );
 
 		if ( snowVolume < minSnowVolume )
 		{
@@ -82,7 +86,13 @@ public class PlayerControls : MonoBehaviour
     	float radius = collider.radius * scale;
 
     	var other = Physics2D.OverlapCircle( new Vector2( transform.position.x, transform.position.y - 0.15f ), radius - 0.1f, LayerMask.GetMask( "Terrain" ) );
-    	bool onGround = other != null;
+    	bool nowOnGround = other != null;
+
+		if ( onGround != nowOnGround )
+		{
+			onGround = nowOnGround;
+			AkSoundEngine.PostEvent( nowOnGround ? "snowball_roll_start" : "snowball_roll_stop", gameObject );
+		}
 
 	    var body = GetComponent<Rigidbody2D>();
 	    float horSpeed = Mathf.Abs( body.velocity.x );
@@ -104,7 +114,10 @@ public class PlayerControls : MonoBehaviour
 	    	if ( horSpeed < maxAirSpeed )
 	    		body.AddForce( new Vector2( horInput * moveAirForce, 0 ) );
 	    }
-    }
+
+		horSpeed = Mathf.Abs( body.velocity.x );
+		AkSoundEngine.SetRTPCValue( "snowball_speed", horSpeed );
+	}
 
 	private void LateUpdate()
 	{

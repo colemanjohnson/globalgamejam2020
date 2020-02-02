@@ -16,9 +16,9 @@ public class Sun : MonoBehaviour
 
 	private enum State
 	{
-		KeepAway,
-		Attack,
-		Charge
+		KeepAway = 1,
+		Attack = 2,
+		Charge = 3
 	}
 
 	private State state = State.KeepAway;
@@ -40,7 +40,8 @@ public class Sun : MonoBehaviour
     		var values = Enum.GetValues( typeof( State ) );
 			var random = new System.Random();
 			state = (State)values.GetValue( random.Next( values.Length ) );
-
+			animator.SetInteger( "AttackState", (int)state );
+			
 			if ( state == State.Charge )
 			{
 			    var toTarget = ( target.transform.position - transform.position );
@@ -53,7 +54,7 @@ public class Sun : MonoBehaviour
 			}
 			else
 			{
-				stateTimer = random.Next( 10 );
+				stateTimer = random.Next( 10 ) + 1;
 			}
     	}
     }
@@ -97,7 +98,5 @@ public class Sun : MonoBehaviour
         {
         	body.velocity = body.velocity.normalized * curMaxSpeed;
         }
-
-        animator.SetFloat( "AttackVelocity", body.velocity.magnitude );
     }
 }
