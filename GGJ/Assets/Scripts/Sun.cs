@@ -51,6 +51,8 @@ public class Sun : MonoBehaviour
 	    		body.velocity = Vector2.zero;
 
 	    		stateTimer = 3;
+
+				AkSoundEngine.PostEvent( "sun_swoosh", gameObject );
 			}
 			else
 			{
@@ -102,6 +104,9 @@ public class Sun : MonoBehaviour
 
 	public void OnPlayerDeath()
 	{
+		state = State.KeepAway;
+		keepAwayDistance = 1.0f;
+		stateTimer = 5.0f;
 		AkSoundEngine.PostEvent( "sun_laugh", gameObject );
 		animator.SetTrigger( "PlayerDead" );
 	}

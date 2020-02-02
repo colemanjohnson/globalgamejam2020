@@ -42,6 +42,10 @@ public class PlayerControls : MonoBehaviour
 			return;
 
 		alive = false;
+
+		if ( causeOfDeath == CauseOfDeath.Falling )
+			transform.localScale = new Vector2( 1.0f, 1.0f );
+
 		// Do something I guess
 		PlayerDeath.Invoke();
 	}
