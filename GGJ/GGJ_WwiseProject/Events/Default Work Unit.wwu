@@ -6,9 +6,6 @@
 				<Event Name="snowball_roll_start" ID="{138843EF-C31D-4674-AB49-ED33A2651310}">
 					<ChildrenList>
 						<Action Name="" ID="{AEB7B81A-EED2-4E6E-80A4-859DBC7E1FE1}" ShortID="384474398">
-							<PropertyList>
-								<Property Name="FadeTime" Type="Real64" Value="1"/>
-							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="SMT_SnowRolling_Loop" ID="{9A42E867-091E-4CBE-82EE-8DF7608C5A03}" WorkUnitID="{B4627C02-2E5E-49CC-A855-14950A6AEF54}"/>
