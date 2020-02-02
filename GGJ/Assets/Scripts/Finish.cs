@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Finish : MonoBehaviour
 {
+	public GameObject sun;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,7 +31,7 @@ public class Finish : MonoBehaviour
     		body.isKinematic = true;
     		body.simulated = false;
 
-    		BroadcastMessage( "OnPlayerWin" );
+    		sun.GetComponent<Sun>().OnPlayerWin();
     	}
     }
 }

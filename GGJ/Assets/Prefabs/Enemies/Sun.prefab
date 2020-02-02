@@ -100,10 +100,11 @@ MonoBehaviour:
   animator: {fileID: 0}
   target: {fileID: 356464342908722091, guid: 98f4ac0bfd5d49b4983f4a8f6c326db2, type: 3}
   acceleration: 0.18
-  maxSpeed: 8
+  maxSpeed: 10
   keepAwayDistance: 10
   keepAwaySpeedFactor: 0.25
-  chargeSpeed: 10
+  chargeAcceleration: 0.3
+  chargeMaxSpeed: 16
 --- !u!114 &8380339219716735245
 MonoBehaviour:
   m_ObjectHideFlags: 0
