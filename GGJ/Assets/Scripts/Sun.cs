@@ -11,7 +11,8 @@ public class Sun : MonoBehaviour
 	public float maxSpeed = 6;
 	public float keepAwayDistance = 10.0f;
 	public float keepAwaySpeedFactor = 0.25f;
-	public float chargeSpeed = 8;
+	public float chargeAcceleration = 0.3f;
+	public float chargeMaxSpeed = 16;
 
 	private enum State
 	{
@@ -40,12 +41,19 @@ public class Sun : MonoBehaviour
 			var random = new System.Random();
 			state = (State)values.GetValue( random.Next( values.Length ) );
 
-			stateTimer = random.Next( 10 );
-
 			if ( state == State.Charge )
 			{
 			    var toTarget = ( target.transform.position - transform.position );
 			    chargeDir = toTarget.normalized;
+
+	    		var body = GetComponent<Rigidbody2D>();
+	    		body.velocity = Vector2.zero;
+
+	    		stateTimer = 3;
+			}
+			else
+			{
+				stateTimer = random.Next( 10 );
 			}
     	}
     }
@@ -77,14 +85,17 @@ public class Sun : MonoBehaviour
 
 	    	case State.Charge:
 	    	{
-			    body.velocity = chargeDir * chargeSpeed;
+			    body.velocity += chargeDir * chargeAcceleration;
 	    		break;
 	    	}
 	    }
 
-        if ( body.velocity.magnitude > maxSpeed )
+    	float curMaxSpeed = maxSpeed;
+    	if ( state == State.Charge )
+    		curMaxSpeed = chargeMaxSpeed;
+        if ( body.velocity.magnitude > curMaxSpeed )
         {
-        	body.velocity = body.velocity.normalized * maxSpeed;
+        	body.velocity = body.velocity.normalized * curMaxSpeed;
         }
 
         animator.SetFloat( "AttackVelocity", body.velocity.magnitude );
