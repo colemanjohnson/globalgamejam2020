@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{351BE994-D8BE-4466-97B9-9622AC5D2C8D}" SchemaVersion="94">
 	<SoundBanks>
-		<WorkUnit Name="Default Work Unit" ID="{351BE994-D8BE-4466-97B9-9622AC5D2C8D}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{351BE994-D8BE-4466-97B9-9622AC5D2C8D}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="SFX" ID="{80CBE12E-BD79-4DD9-98E6-80EAA43B99DB}">
+					<ObjectInclusionList>
+						<ObjectRef Name="snowball_roll_start" ID="{138843EF-C31D-4674-AB49-ED33A2651310}" WorkUnitID="{3F765351-5BFD-47E9-B2C2-F60772F2D783}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="music_stop" ID="{AF2329D2-E1ED-49CB-962B-D9E1CC90FFD9}" WorkUnitID="{3F765351-5BFD-47E9-B2C2-F60772F2D783}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="music_start" ID="{E6B198DE-C16A-4C7F-A103-9337EB10542A}" WorkUnitID="{3F765351-5BFD-47E9-B2C2-F60772F2D783}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="snowball_roll_stop" ID="{7F7BAFEC-714F-4D81-ABC6-7B58CEE4DD3B}" WorkUnitID="{3F765351-5BFD-47E9-B2C2-F60772F2D783}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundBanks>
 </WwiseDocument>

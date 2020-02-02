@@ -11,6 +11,20 @@
 
 namespace AK
 {
+    namespace EVENTS
+    {
+        static const AkUniqueID MUSIC_START = 3725903807U;
+        static const AkUniqueID MUSIC_STOP = 3227181061U;
+        static const AkUniqueID SNOWBALL_ROLL_START = 634408506U;
+        static const AkUniqueID SNOWBALL_ROLL_STOP = 359931474U;
+    } // namespace EVENTS
+
+    namespace GAME_PARAMETERS
+    {
+        static const AkUniqueID SNOWBALL_SIZE = 880657425U;
+        static const AkUniqueID SNOWBALL_SPEED = 1173609391U;
+    } // namespace GAME_PARAMETERS
+
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;

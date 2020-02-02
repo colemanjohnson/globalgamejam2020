@@ -1,6 +1,259 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{B4627C02-2E5E-49CC-A855-14950A6AEF54}" SchemaVersion="94">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{B4627C02-2E5E-49CC-A855-14950A6AEF54}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{B4627C02-2E5E-49CC-A855-14950A6AEF54}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="snowball game loop" ID="{F1028936-9782-44E3-943D-3B3325093B4F}" ShortID="573775641">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="IsStreamingEnabled" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6B8FE0D5-F696-432A-B747-1471B8DE25AC}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{042F57FB-B333-48AC-98CA-A26B1D569EF8}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="snowball game loop" ID="{1B39055F-C939-4B6A-AC57-D1E1592B181E}" ShortID="918278237">
+							<Language>SFX</Language>
+							<AudioFile>snowball game loop.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="snowball game loop" ID="{1B39055F-C939-4B6A-AC57-D1E1592B181E}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<ActorMixer Name="SFX" ID="{807B7643-94F4-4B3A-82FA-6FD84EADF22B}" ShortID="2723294">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6B8FE0D5-F696-432A-B747-1471B8DE25AC}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{042F57FB-B333-48AC-98CA-A26B1D569EF8}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="SMT_Fire_Loop" ID="{975D7ADF-14E2-4C0F-8BFA-6D400A279480}" ShortID="450615495">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6B8FE0D5-F696-432A-B747-1471B8DE25AC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{042F57FB-B333-48AC-98CA-A26B1D569EF8}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SMT_Fire_Loop" ID="{0036D035-4681-46A5-B42B-4768BE95D997}" ShortID="309110493">
+									<Language>SFX</Language>
+									<AudioFile>SMT_Fire_Loop.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SMT_Fire_Loop" ID="{0036D035-4681-46A5-B42B-4768BE95D997}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SMT_SnowRolling_Loop" ID="{9A42E867-091E-4CBE-82EE-8DF7608C5A03}" ShortID="666891075">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Lowpass" Type="int16">
+									<RTPCList>
+										<RTPC Name="" ID="{C28623FC-AAF1-413D-901F-734B3EEDE7DD}" ShortID="527635434">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="snowball_size" ID="{10AAE3F6-06EA-4FF9-A8F5-78AEF77D2346}" WorkUnitID="{1EE38CAA-A1C7-4B9A-8924-6AF6D0E53626}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{CB577FED-8FAF-4B9D-BBC6-738F0263D8E8}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>45</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>26</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{01551ADC-6B69-4047-A355-142C9341A781}" ShortID="298401367">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="snowball_speed" ID="{436028E3-16DC-4B3E-A941-BDC90BF78685}" WorkUnitID="{1EE38CAA-A1C7-4B9A-8924-6AF6D0E53626}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{67A97B34-B0F6-4123-82F5-17450C6655CB}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="1"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-27.11863</YPos>
+														<Flags>5</Flags>
+														<SegmentShape>Log3</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>10</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6B8FE0D5-F696-432A-B747-1471B8DE25AC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{042F57FB-B333-48AC-98CA-A26B1D569EF8}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SMT_SnowRolling_Loop" ID="{3F5FA03E-EBFA-4636-AABA-A60300C24154}" ShortID="338418251">
+									<Language>SFX</Language>
+									<AudioFile>SMT_SnowRolling_Loop.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SMT_SnowRolling_Loop" ID="{3F5FA03E-EBFA-4636-AABA-A60300C24154}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</ActorMixer>
+				<RandomSequenceContainer Name="Snowball Impacts" ID="{3ADB3A36-EBE5-4607-BDA7-7D42CCE97C94}" ShortID="618373677">
+					<PropertyList>
+						<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6B8FE0D5-F696-432A-B747-1471B8DE25AC}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{042F57FB-B333-48AC-98CA-A26B1D569EF8}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="SMT_SnowballImpact_1" ID="{5A333A46-E37F-471A-BCCE-47FB67D26316}" ShortID="995691652">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6B8FE0D5-F696-432A-B747-1471B8DE25AC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{042F57FB-B333-48AC-98CA-A26B1D569EF8}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SMT_SnowballImpact_1" ID="{FE672110-0B9B-4AE2-BE51-E08877C3C9B9}" ShortID="119668863">
+									<Language>SFX</Language>
+									<AudioFile>SMT_SnowballImpact_1.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SMT_SnowballImpact_1" ID="{FE672110-0B9B-4AE2-BE51-E08877C3C9B9}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SMT_SnowballImpact_3" ID="{714CBAFA-B4CA-4581-9D41-5689929FB792}" ShortID="721438205">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6B8FE0D5-F696-432A-B747-1471B8DE25AC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{042F57FB-B333-48AC-98CA-A26B1D569EF8}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SMT_SnowballImpact_3" ID="{12686E99-D82E-4659-9592-F0AE2466AFA1}" ShortID="753067744">
+									<Language>SFX</Language>
+									<AudioFile>SMT_SnowballImpact_3.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SMT_SnowballImpact_3" ID="{12686E99-D82E-4659-9592-F0AE2466AFA1}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SMT_SnowballImpact_4" ID="{C17E5215-AEF7-4B99-8018-82D87C94E47A}" ShortID="726808321">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6B8FE0D5-F696-432A-B747-1471B8DE25AC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{042F57FB-B333-48AC-98CA-A26B1D569EF8}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SMT_SnowballImpact_4" ID="{03FFB3CB-4323-4C75-BCE5-7DCB75FEED75}" ShortID="105283859">
+									<Language>SFX</Language>
+									<AudioFile>SMT_SnowballImpact_4.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SMT_SnowballImpact_4" ID="{03FFB3CB-4323-4C75-BCE5-7DCB75FEED75}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SMT_SnowballImpact_2" ID="{3D768E6E-A653-4E24-A4FC-DADBE28FEF37}" ShortID="467032441">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6B8FE0D5-F696-432A-B747-1471B8DE25AC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{042F57FB-B333-48AC-98CA-A26B1D569EF8}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SMT_SnowballImpact_2" ID="{A0E4575D-3894-41B1-9448-03587C561205}" ShortID="470869414">
+									<Language>SFX</Language>
+									<AudioFile>SMT_SnowballImpact_2.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SMT_SnowballImpact_2" ID="{A0E4575D-3894-41B1-9448-03587C561205}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SMT_SnowballImpact_5" ID="{66B5BEA7-197A-4758-9778-308EF895DD23}" ShortID="1008046980">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6B8FE0D5-F696-432A-B747-1471B8DE25AC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{042F57FB-B333-48AC-98CA-A26B1D569EF8}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SMT_SnowballImpact_5" ID="{34E91E24-2309-4D1B-A4A3-6346975660A2}" ShortID="26972976">
+									<Language>SFX</Language>
+									<AudioFile>SMT_SnowballImpact_5.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SMT_SnowballImpact_5" ID="{34E91E24-2309-4D1B-A4A3-6346975660A2}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>

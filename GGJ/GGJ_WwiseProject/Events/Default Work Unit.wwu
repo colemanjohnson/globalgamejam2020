@@ -1,6 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{3F765351-5BFD-47E9-B2C2-F60772F2D783}" SchemaVersion="94">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{3F765351-5BFD-47E9-B2C2-F60772F2D783}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{3F765351-5BFD-47E9-B2C2-F60772F2D783}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="snowball_roll_start" ID="{138843EF-C31D-4674-AB49-ED33A2651310}">
+					<ChildrenList>
+						<Action Name="" ID="{AEB7B81A-EED2-4E6E-80A4-859DBC7E1FE1}" ShortID="384474398">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SMT_SnowRolling_Loop" ID="{9A42E867-091E-4CBE-82EE-8DF7608C5A03}" WorkUnitID="{B4627C02-2E5E-49CC-A855-14950A6AEF54}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="snowball_roll_stop" ID="{7F7BAFEC-714F-4D81-ABC6-7B58CEE4DD3B}">
+					<ChildrenList>
+						<Action Name="" ID="{4D09A20D-FC78-4F74-923A-15113DE19FEE}" ShortID="253290457">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SMT_SnowRolling_Loop" ID="{9A42E867-091E-4CBE-82EE-8DF7608C5A03}" WorkUnitID="{B4627C02-2E5E-49CC-A855-14950A6AEF54}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="music_start" ID="{E6B198DE-C16A-4C7F-A103-9337EB10542A}">
+					<ChildrenList>
+						<Action Name="" ID="{A96EB927-0C8F-4125-894E-5D4C6FE6F2DD}" ShortID="406892465">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="snowball game loop" ID="{F1028936-9782-44E3-943D-3B3325093B4F}" WorkUnitID="{B4627C02-2E5E-49CC-A855-14950A6AEF54}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{C5A4B142-2967-44FC-84BF-938B2A61056A}" ShortID="596945946">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="snowball game loop" ID="{F1028936-9782-44E3-943D-3B3325093B4F}" WorkUnitID="{B4627C02-2E5E-49CC-A855-14950A6AEF54}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="music_stop" ID="{AF2329D2-E1ED-49CB-962B-D9E1CC90FFD9}">
+					<ChildrenList>
+						<Action Name="" ID="{71A0E6A4-E069-4EA4-A314-5B0B18AEDF7C}" ShortID="924154196">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="snowball game loop" ID="{F1028936-9782-44E3-943D-3B3325093B4F}" WorkUnitID="{B4627C02-2E5E-49CC-A855-14950A6AEF54}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>
