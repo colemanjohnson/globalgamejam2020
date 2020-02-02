@@ -8,20 +8,47 @@ public class Sun : MonoBehaviour
 	public GameObject target = null;
 	public float acceleration = 0.1f;
 	public float maxSpeed = 6;
+	public float stateTime = 5;
+	public float keepAwayDistance = 10.0f;
+
+	private bool attacking = false;
+	private float stateTimer = 0;
 
     // Start is called before the first frame update
     void Start()
     {
+    	attacking = false;
+    }
+
+    void UpdateState()
+    {
+    	stateTimer += Time.deltaTime;
+    	if ( stateTimer >= stateTime )
+    	{
+    		attacking = !attacking;
+    		stateTimer = 0;
+    	}
     }
 
     // Update is called once per frame
     void Update()
     {
-        var toTarget = ( target.transform.position - transform.position );
-        var dir = toTarget.normalized;
+    	UpdateState();
 
-        var body = GetComponent<Rigidbody2D>();
-        body.velocity += (Vector2)dir * acceleration;
+	    var body = GetComponent<Rigidbody2D>();
+
+	    var toTarget = ( target.transform.position - transform.position );
+	    var dir = toTarget.normalized;
+
+        if ( attacking )
+        {
+	        body.velocity += (Vector2)dir * acceleration;
+        }
+        else
+        {
+        	float dist = toTarget.magnitude - keepAwayDistance;
+        	body.velocity += (Vector2)dir * dist / 2;
+        }
 
         if ( body.velocity.magnitude > maxSpeed )
         {
