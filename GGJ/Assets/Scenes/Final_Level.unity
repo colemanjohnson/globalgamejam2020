@@ -23459,6 +23459,24 @@ Tilemap:
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+  - first: {x: 232, y: 34, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 6
+      m_TileSpriteIndex: 6
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 233, y: 34, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 6
+      m_TileSpriteIndex: 6
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
   - first: {x: 501, y: 34, z: 0}
     second:
       serializedVersion: 2
@@ -23545,6 +23563,33 @@ Tilemap:
       serializedVersion: 2
       m_TileIndex: 5
       m_TileSpriteIndex: 5
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 234, y: 35, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 6
+      m_TileSpriteIndex: 6
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 235, y: 35, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 6
+      m_TileSpriteIndex: 6
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
+  - first: {x: 236, y: 35, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 6
+      m_TileSpriteIndex: 6
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -31600,7 +31645,7 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 9b4ba3ec8c58f454195238c92aa6a752, type: 2}
   - m_RefCount: 51
     m_Data: {fileID: 11400000, guid: 41ee4690bb118ee4b81b445ffb2054a7, type: 2}
-  - m_RefCount: 770
+  - m_RefCount: 775
     m_Data: {fileID: 11400000, guid: 6bac6fe432904384e9460065afed00d3, type: 2}
   - m_RefCount: 41
     m_Data: {fileID: 11400000, guid: f61e671598a072c499caea51996f740c, type: 2}
@@ -31623,14 +31668,14 @@ Tilemap:
   - m_RefCount: 51
     m_Data: {fileID: 4504672967406562172, guid: 7d79daae14e856e44a144bf62376e60e,
       type: 3}
-  - m_RefCount: 770
+  - m_RefCount: 775
     m_Data: {fileID: -6355097439676335766, guid: 7d79daae14e856e44a144bf62376e60e,
       type: 3}
   - m_RefCount: 41
     m_Data: {fileID: -5417981717753986566, guid: 7d79daae14e856e44a144bf62376e60e,
       type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 3123
+  - m_RefCount: 3128
     m_Data:
       e00: 1
       e01: 0
@@ -31649,7 +31694,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 3123
+  - m_RefCount: 3128
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -33757,6 +33802,21 @@ PrefabInstance:
         type: 3}
       propertyPath: PlayerDeath.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ReloadLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 2776119067293229910, guid: 98f4ac0bfd5d49b4983f4a8f6c326db2,
+        type: 3}
+      propertyPath: PlayerDeath.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 2036259937}
+    - target: {fileID: 2776119067293229910, guid: 98f4ac0bfd5d49b4983f4a8f6c326db2,
+        type: 3}
+      propertyPath: PlayerDeath.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: OnPlayerDeath
+      objectReference: {fileID: 0}
+    - target: {fileID: 2776119067293229910, guid: 98f4ac0bfd5d49b4983f4a8f6c326db2,
+        type: 3}
+      propertyPath: PlayerDeath.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3332576404995123211, guid: 98f4ac0bfd5d49b4983f4a8f6c326db2,
         type: 3}
@@ -36345,6 +36405,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2036259937 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8380339219716735246, guid: f9f7c53210e2dec448908b1ccc18bd17,
+    type: 3}
+  m_PrefabInstance: {fileID: 1383074285}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf97db6c7e6356e4d86ea7a22dc2e66f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2055598963
 GameObject:
   m_ObjectHideFlags: 0

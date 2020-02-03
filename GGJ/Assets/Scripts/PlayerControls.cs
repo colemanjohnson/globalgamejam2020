@@ -106,7 +106,7 @@ public class PlayerControls : MonoBehaviour
 
     	if ( restart )
     	{
-    		SceneManager.LoadScene( "Level1" );
+    		SceneManager.LoadScene( "Final_Level" );
     		return;
     	}
 
